@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chatly-Try</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+
+  <body id="chat-container">
+      <div id="header">
+        <h2>Chatly</h2>
+      </div>
+      <div id="messages"></div>
+
+      <div id="input-container">
+        <button id="upload-button"><i class="fas fa-upload"></i></button>
+        <input
+          id="file-input"
+          type="file"
+          accept="image/*,video/*"
+          style="display: none"
+        />
+          <input
+            id="message-input"
+            type="text"
+            placeholder="Type a message..."
+          />
+        
+        <button id="send-button"><i class="fas fa-paper-plane"></i></button>
+        <button id="skip-button"><i class="fas fa-forward"></i></button>
+      </div>
+      <div id="image-preview-container">
+        <span class="close-btn">&times;</span>
+        <img src="" alt="Preview" />
+      </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="client.js"></script>
+  </body>
+</html>
