@@ -142,7 +142,7 @@ body {
   align-items: center;
   text-align: left;
   max-width: 60%;
-  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
 }
 
 .message.theirs {
